@@ -5,41 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js" defer></script>
+    <script src="js.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div id="container">
-        <input type="text" id="display" disabled />
-        <ul class="row top">
-            <li>CE</li>
-            <li>DE</li>
-            <li>%</li>
-        </ul>
-        <ul class="row">
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>/</li>
-        </ul>
-        <ul class="row">
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>*</li>
-        </ul>
-        <ul class="row">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>-</li>
-        </ul>
-        <ul class="row">
-            <li>0</li>
-            <li>.</li>
-            <li id="equal-sign">=</li>
-            <li>+</li>
-        </ul>
+        <div id="display"></div>
+        <div class="buttons">
+            <div class="row">
+                <button class="clear">CE</button>
+                <button class="backspace">←</button>
+            </div>
+            <div class="row">
+                <button class="digit">7</button>
+                <button class="digit">8</button>
+                <button class="digit">9</button>
+                <button class="operator">/</button>
+            </div>
+            <div class="row">
+                <button class="digit">4</button>
+                <button class="digit">5</button>
+                <button class="digit">6</button>
+                <button class="operator">*</button>
+            </div>
+            <div class="row">
+                <button class="digit">1</button>
+                <button class="digit">2</button>
+                <button class="digit">3</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="row">
+                <button class="digit">0</button>
+                <button class="decimal">.</button>
+                <button class="equals">=</button>
+                <button class="operator">+</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
