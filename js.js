@@ -144,6 +144,7 @@ function inputOperator(operator) {
         result = operate(firstOperation, firstOperand, secondOperand);
         if(result === 'Error') {
             displayValue = result;
+            firstOperand = null;
             firstOperation = null;
             secondOperand = null;
             return;
@@ -176,6 +177,9 @@ function inputDecimal(dot) {
 }
 
 function backSpace() {
+    if(displayValue === 'Error') {
+        
+    }
     if(displayValue.length > 1) {
        displayValue = displayValue.slice(0, displayValue.length - 1);
     }
